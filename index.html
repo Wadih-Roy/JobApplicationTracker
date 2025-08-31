@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Welcome to Job App Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Job App Tracker</h1>
+        <p>Your personal job application management tool.</p>
+    </div>
+
+    <div class="job-container">
+        <label for="job-input">Enter Job Title:</label>
+        <input type="text" id="job-input" placeholder="e.g., Software Engineer">
+        <select id="status-select">
+            <option value="interviewing">Interviewing</option>
+            <option value="offered">Offered</option>
+            <option value="rejected">Rejected</option>
+            <option value="pending">Pending</option>
+        </select>
+        <input type="date" id="date-input">
+        <button class="add-job">Add Job</button>
+    </div>
+</body>
+</html>
