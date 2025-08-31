@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <title>Welcome to Job App Tracker</title>
 </head>
 <body>
@@ -15,13 +15,23 @@
         <label for="job-input">Enter Job Title:</label>
         <input type="text" id="job-input" placeholder="e.g., Software Engineer">
         <select id="status-select">
-            <option value="interviewing">Interviewing</option>
-            <option value="offered">Offered</option>
-            <option value="rejected">Rejected</option>
-            <option value="pending">Pending</option>
+            <option value="Interviewing">Interviewing</option>
+            <option value="Offered">Offered</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Pending">Pending</option>
+            <option value="Ghosted">Ghosted</option>
         </select>
         <input type="date" id="date-input">
-        <button class="add-job">Add Job</button>
+        <input type="text" id="link-input" placeholder="Application Link">
+        <button id="add-job">Add Job</button>
     </div>
+
+    <div class="job-list">
+        <h2>Job Applications</h2>
+        <ul id="jobs-ul">
+            <!-- Job entries will be added here -->
+        </ul>
+
+    <script src="./scripts/app.js"></script>
 </body>
 </html>
